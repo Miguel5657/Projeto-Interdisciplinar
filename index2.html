@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Interdisciplinar</title>
+</head>
+<body>
+    <div class="menu">
+        <a class="ativo" href="index.html">Cadastro de Clientes</a>
+        <link href="estilo.css" rel="stylesheet" />
+    </div>
+    <div class="form">
+        <form name="frmProduto">
+            <h2>Cadastro de Produtos</h2>
+                <div class="form-group">
+                    <label>Código</label>
+                    <input class="input-control" type="number" size="5" id="codigoo"/>
+                </div>
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input class="input-control" type="text" size="40" id="nomee"/>
+                </div>
+                <div class="form-group">
+                    <label>Preço Custo</label>
+                    <input class="input-control" type="number" size="20" id="preco"/>
+
+                    <label class="right-inline">Lucro %</label>
+                    <input class="input-control" type="number" size="10" id="lucro" />
+                    <label class="right-inline">Preço de venda</label>
+                    <input class="input-control" type="number" type="text" size="20" id="venda" disabled />
+                </div>
+                <div class="form-group">
+                    <label>ICMS %</label>
+                    <input class="input-control" type="number" size="10" id="icms"/>
+
+                    <label class="right-inline">Subst Tributaria</label>
+                    <input class="input-control" type="number" size="15" id="tributaria" />
+
+                    <label class="right-inline">CST - NFE</label>
+                    <input class="input-control" type="number" type="text" size="20" id="nfe" />
+
+                    <label class="right-inline">NCM - NFE</label>
+                    <input class="input-control" type="number" size="10" id="ncm" />
+
+                    <label class="right-inline">Unid. de medida</label>
+                    <input class="input-control" type="text" size="2" id="unidade" />
+                </div>
+                <div class="form-group">
+                <label>Marca</label>
+                <input class="input-control" type="text" size="20" id="marca" />
+
+                <label class="right-inline">Categoria</label>
+                <input class="input-control" type="text" size="20" id="categoria" />
+                </div>
+                <div class="form-group">
+                    <label>Origem</label>
+                    <select id="nacional">
+                        <option value=""></option>
+                        <option value="nacionalidade" >Nacional</option>
+                        <option value="estrangeiro" >Estrangeiro</option>
+                    </select>
+
+                    <label class="right-inline">Código de barra</label>
+                    <input class="input-control" type="number" size="40" id="barra" />
+                </div>
+                <div class="form-group">
+                    <label></label>
+                    <button id="salvar">Salvar</button>
+                    <button id="cancelar">Cancelar</button>
+                </div>
+                </form>
+                </div>
+                <script src="produto.js"></script> 
+</body>
+</html>
